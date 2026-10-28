@@ -36,7 +36,7 @@ def run_ai_analysis(api_key, sender, subject, body, local_flags):
         )
 
         response = client.chat.completions.create(
-            model="model="openai/gpt-oss-120b",
+            model="llama-3.1-70b-versatile",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
